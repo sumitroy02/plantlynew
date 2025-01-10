@@ -1,0 +1,3300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>PLANTLY</title>
+
+
+
+
+   
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    
+
+
+
+    <link rel="stylesheet" href="swiper-11.1.12/package/swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#abcd"><i class="fa-solid fa-up-long fa-lg"
+            style="color: #f9fafb;"></i></a></button>
+
+    <div id="btn-div" onclick="closebtn()"></div>
+
+    <div class="back"></div>
+
+    <div class="container1" id="abcd">
+
+        <div class="box box1">
+            <div class="hamburger-icon" onclick="hamburgerslidertoogle()">
+                <div class="green-line-ham"></div>
+                <div class="green-line-ham"></div>
+                <div class="green-line-ham"></div>
+            </div>
+        </div>
+
+        <a href="index.html" class="box box2"><img src="allimages/logo.png" alt="" class="logoclass"></a>
+
+
+
+        <div class="box box3">
+
+
+            <button class="for-background-remove navhideitem" id="searchpanelbtn">
+                <div class="home ">SEARCH </div>
+            </button>
+
+
+
+            <button class="for-background-remove search1 " id="searchpanelbtn1">
+                <!-- <img src="searchicon.png" style="width: 20px; height: auto;" alt=""> -->
+            </button>
+
+
+
+            <button class="signupbtn navhideitem" onclick="signupbtnn()">SIGNUP</button>
+
+
+
+            <button class="for-background-remove" onclick="wish()">
+                <img src="allimages/wishlistbag.png" style="width: 28px; height: auto;" alt="">
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="searchpanel">
+        <div class="searchpanel1">
+            <div class="searchinputdiv">
+                <div class="searchicon"><i class="fa-solid fa-magnifying-glass fa-lg search"
+                        style="color: #f9fafa;"></i></div>
+                <input class="searchinput" type="text" placeholder="Type here">
+            </div>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: rgb(253, 253, 252); " id="upbtn"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="signuppage" id="signpage">
+
+        <div class="signuppanel">
+
+            <div class="cutbtn" onclick="cutbtn()">X</div>
+
+
+            <div id="coverdiv">
+                <div class="cover-inner-div">
+                    <div class="div-cover-text">Hello there! </div>
+                    <div class="div-cover-text entertext">Enter your personal details and start Journey
+                        with us</div>
+                </div>
+            </div>
+
+
+            <div class="signup-box1">
+                <div class="logintext">Login</div>
+
+                <div class="signupcontent">
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="usernameh1">Username</div>
+                    <input class="input-box" type="text" placeholder="Type your Username or Number">
+
+
+                    <div class="passwordh1">Password</div>
+                    <input class="input-box" type="password" maxlength="6" min="6" placeholder="Type your Password">
+
+
+                    <div class="forgot">Forgot password?</div>
+
+                    <button class="for-login-btn-style">Login</button>
+
+                    <div style="display: flex;" class="have">
+                        Don't have an account?
+                        <button class="logpage-signup-btn-style" onclick="signupbtn()">SignUp</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="signup-box2">
+
+                <div class="signuptext">Sign up</div>
+
+                <div class="signupcontent">
+                    <div style="height: 20px;"></div>
+
+                    <input class="input-box" type="text" placeholder="Enter Name">
+
+
+                    <input class="input-box" type="tel" placeholder="Contact" maxlength="10" minlength="10">
+
+
+                    <input class="input-box" type="password" maxlength="6" min="6" placeholder="Password">
+
+
+                    <input class="input-box" type="password" maxlength="6" min="6" placeholder="Confirm Password">
+
+
+                    <button class="for-signup-btn-style">SignUp</button>
+
+                    <div style="display: flex;" class="have">
+                        Already have an account? <button class="signuppage-lognin-btn-style"
+                            onclick="abc()">LOGIN</button>
+                    </div>
+
+
+                    <div class="or">
+                        <hr style="width: 40%; height: 0.8px; background-color: #212121;border: none;">or
+                        <hr style="width: 40%; height: 0.8px; background-color: #212121;border: none;">
+                    </div>
+
+
+                    <div class="with-google-signup-btn">
+                        Sign up with <img src="allimages/googleicon.png" width="20px" height="auto" alt="">
+                    </div>
+
+
+                    <div class="with-facebook-signup-btn">
+                        Sign up with <img src="allimages/facebookicon.png" width="20px" height="auto" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="hamburger-slider" id="hamburger-slide">
+        <div class="cut">
+            <i class="fa-solid fa-angles-left fa-lg" style="color:rgb(250, 249, 249)" onclick="slideleft()"></i>
+            <div style="width: 30px;"></div>
+        </div>
+
+
+        <div class="profile">
+            <div class="profile-image-frame">
+                <img src="allimages/profileimage.png" alt="" style="width: 100%;height: auto;">
+            </div>
+
+            <div class="profile-text-div">
+                PROFILE
+            </div>
+        </div>
+
+
+        <div class="ham-options-div">
+
+            <a href="index.html" class="slidecontent">
+                <i class="fa-solid fa-house fa-lg" style="color: #fcfcfd;"></i>
+                HOME
+            </a>
+
+
+            <div class="slidecontent">
+                <i class="fa-solid fa-circle-info fa-lg" style="color: rgb(250, 249, 249);"></i>
+                PERSONAL INFO
+            </div>
+
+            <div class="slidecontent">
+                <i class="fa-solid fa-language fa-lg" style="color: rgb(250, 249, 249)"></i>
+                CHOOSE LANGUAGE
+            </div>
+
+            <div class="slidecontent">
+                <i class="fa-solid fa-list fa-lg" style="color: rgb(250, 249, 249);"></i>
+                MY ORDERS
+            </div>
+
+            <div class="slidecontent">
+                <i class="fa-solid fa-location-crosshairs fa-lg" style="color: rgb(250, 249, 249);"></i>
+                TRACK ORDER
+            </div>
+
+            <div class="slidecontent">
+                <i class="fa-solid fa-bell fa-lg" style="color: rgb(250, 249, 249);"></i>
+                MY NOTIFICATIONS
+            </div>
+
+            <div class="slidecontent">
+                <i class="fa-solid fa-gear fa-2lg" style="color: rgb(250, 249, 249);"></i>
+                SETTING
+            </div>
+
+            <div class="slidecontent">HELP CENTER</div>
+
+            <div class="slidecontent">LEGAL</div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="wishlistbag" id="wishlist3">
+
+        <ol id="wishitem">
+
+        </ol>
+        <!-- <img  id="lo"   src="" alt="" width="70px"> -->
+
+        <div class="empty">Empty <i class="fa-solid fa-bag-shopping fa-sm" style="color: #fafcff;"></i></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="nextsecondbar0">
+        <div class="nextsecondbar">
+            <div class="nextsecondbar2">
+                <div class="searchinputdiv">
+                    <div class="searchicon"><i class="fa-solid fa-magnifying-glass fa-lg search"
+                            style="color: #f9fafa;"></i></div>
+                    <input class="searchinput" type="text" placeholder="Type here">
+                </div>
+            </div>
+
+
+
+            <div class="contents plants1">
+                <div class="secopbtn" data-op="pl">PLANTS</div>
+                <div class="options-div1 pl">
+                    <div class="opstylediv">
+                        <div class="removebtn2"></div>
+                        <div class="planttextopdiv">PLANTS</div>
+                        <div class="plants-options optioncss1  option-css1" data-plant="indoorplantpot">Indoor Plants
+                        </div>
+                        <div class="plants-options optioncss1  option-css1" data-plant="flowerplantpot">Flowering
+                            Plants
+                        </div>
+                        <div class="plants-options optioncss1 ">Air Purifying Plants</div>
+                        <div class="plants-options optioncss1 ">Low Light Plants</div>
+                        <div class="plants-options optioncss1 ">Fruit Plants</div>
+                        <div class="plants-options optioncss1 ">Medicinal & Aromatic Plants</div>
+                        <div class="plants-options optioncss1 ">Cacti and Succulents</div>
+                        <div class="plants-options optioncss1 ">Hanging Plants</div>
+                        <div class="plants-options optioncss1 ">Low Maintainence Plants</div>
+                        <div class="plants-options optioncss1 ">Pet-friendly Plants</div>
+                        <div class="plants-options optioncss1 ">New Arrivals</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents seeds1">
+                <div class="secopbtn" data-op="se">SEEDS</div>
+                <div class="options-div1 se">
+                    <div class="opstylediv">
+                        <div class="removebtn2"></div>
+
+                        <div class="planttextopdiv">SEEDS</div>
+                        <div class="seeds-options optioncss1 option-css1" data-plant="flowerseeds">Flower Seeds</div>
+                        <div class="seeds-options optioncss1  option-css1" data-plant="vegetableseeds">Vegetable Seeds
+                        </div>
+                        <div class="seeds-options optioncss1 ">Microgreen Seeds</div>
+                        <div class="seeds-options optioncss1 ">Herb Seeds</div>
+                        <div class="seeds-options optioncss1 ">Fruit Seeds</div>
+                        <div class="seeds-options optioncss1 ">Tree & Grass Seeds</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents pots1">
+                <div class="secopbtn" data-op="po"> POTS & PLANTERS</div>
+                <div class="options-div1  po">
+                    <div class="opstylediv">
+                        <div class="removebtn2"></div>
+                        <div class="planttextopdiv">POTS & PLANTERS</div>
+                        <div class="pots-options optioncss1 option-css1" data-plant="plasticpots">Plastic Pots</div>
+                        <div class="pots-options optioncss1 option-css1" data-plant="ceramicpots">Ceramic Pots</div>
+                        <div class="pots-options optioncss1 ">Metal Planters</div>
+                        <div class="pots-options optioncss1 ">Wooden Planters</div>
+                        <div class="pots-options optioncss1 ">Hanging Planters</div>
+                        <div class="pots-options optioncss1 ">Plant Stands</div>
+                        <div class="pots-options optioncss1 ">Seeding Trays</div>
+                        <div class="pots-options optioncss1 ">Basket Planters</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents care1">
+                <div class="secopbtn" data-op="pla">PLANT CARE</div>
+                <div class="options-div1 pla">
+                    <div class="opstylediv">
+                        <div class="removebtn2"></div>
+                        <div class="planttextopdiv">PLANT CARE</div>
+                        <div class="care-options optioncss1 ">Potting Mix & Fertilizers</div>
+                        <div class="care-options optioncss1 ">Garden Tools</div>
+                        <div class="care-options optioncss1 ">Watering Tools & Accessories</div>
+                        <div class="care-options optioncss1 ">Garden Decor & Accessories</div>
+                        <div class="care-options optioncss1 ">Pest Control</div>
+                        <div class="care-options optioncss1 ">Video Consultation-Doctor green</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents blog1">
+                <div class="secopbtn" data-op="bl"> BLOG</div>
+            </div>
+            <div class="contents offer1">
+                <div class="secopbtn" data-op="sp"> SPECIAL OFFERS</div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- second bar -->
+    <div class="second-bar sechide">
+        <div class="second-bar2">
+            <div class="options">
+                <div class="content2" href="">
+                    PLANTS<div class="underline"></div>
+                </div>
+                <div class="options-div3">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+
+                    <div class="plants-options1 option-css option-css1" data-plant="indoorplantpot">Indoor Plants</div>
+                    <div class="plants-options1 option-css option-css1" data-plant="flowerplantpot">Flowering Plants
+                    </div>
+                    <div class="plants-options1 option-css">Air Purifying Plants</div>
+                    <div class="plants-options1 option-css">Low Light Plants</div>
+                    <div class="plants-options1 option-css">Fruit Plants</div>
+                    <div class="plants-options1 option-css">Medicinal & Aromatic Plants</div>
+                    <div class="plants-options1 option-css">Cacti and Succulents</div>
+                    <div class="plants-options1 option-css">Hanging Plants</div>
+                    <div class="plants-options1 option-css">Low Maintainence Plants</div>
+                    <div class="plants-options1 option-css">Pet-friendly Plants</div>
+                    <div class="plants-options1 option-css">New Arrivals</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content2" href="">
+                    SEEDS<div class="underline"></div>
+                </div>
+                <div class="options-div3 ">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="seeds-options1 option-css  option-css1" data-plant="flowerseeds">Flower Seeds</div>
+                    <div class="seeds-options1 option-css   option-css1" data-plant="vegetableseeds">Vegetable Seeds
+                    </div>
+                    <div class="seeds-options1 option-css">Microgreen Seeds</div>
+                    <div class="seeds-options1 option-css">Herb Seeds</div>
+                    <div class="seeds-options1 option-css">Fruit Seeds</div>
+                    <div class="seeds-options1 option-css">Tree & Grass Seeds</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content2" href="">
+                    POTS & PLANTERS<div class="underline"></div>
+                </div>
+                <div class="options-div3 potoptions">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="pots-options1 option-css  option-css1" data-plant="plasticpots">Plastic Pots</div>
+                    <div class="pots-options1 option-css  option-css1" data-plant="ceramicpots">Ceramic Pots</div>
+                    <div class="pots-options1 option-css">Metal Planters</div>
+                    <div class="pots-options1 option-css">Wooden Planters</div>
+                    <div class="pots-options1 option-css">Hanging Planters</div>
+                    <div class="pots-options1 option-css">Plant Stands</div>
+                    <div class="pots-options1 option-css">Seeding Trays</div>
+                    <div class="pots-options1 option-css">Basket Planters</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content2" href="">
+                    PLANT CARE<div class="underline"></div>
+                </div>
+                <div class="options-div3">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="care-options1 option-css">Potting Mix & Fertilizers</div>
+                    <div class="care-options1 option-css">Garden Tools</div>
+                    <div class="care-options1 option-css">Watering Tools & Accessories</div>
+                    <div class="care-options1 option-css">Garden Decor & Accessories</div>
+                    <div class="care-options1 option-css">Pest Control</div>
+                    <div class="care-options1 option-css">Video Consultation-Doctor green</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content2" href="">
+                    BLOG<div class="underline"></div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content2" href="">
+                    SPECIAL OFFERS<div class="underline"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="second-bar sechide2">
+        <div class="second-bar2">
+            <div class="options">
+                <div class="content" href="" data-op="pl">
+                    PLANTS<div class="underline"></div>
+                </div>
+                <div class="options-div pl">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="plants-options option-css option-css1" data-plant="indoorplantpot">Indoor Plants</div>
+                    <div class="plants-options option-css option-css1" data-plant="flowerplantpot">Flowering Plants
+                    </div>
+                    <div class="plants-options option-css">Air Purifying Plants</div>
+                    <div class="plants-options option-css">Low Light Plants</div>
+                    <div class="plants-options option-css">Fruit Plants</div>
+                    <div class="plants-options option-css">Medicinal & Aromatic Plants</div>
+                    <div class="plants-options option-css">Cacti and Succulents</div>
+                    <div class="plants-options option-css">Hanging Plants</div>
+                    <div class="plants-options option-css">Low Maintainence Plants</div>
+                    <div class="plants-options option-css">Pet-friendly Plants</div>
+                    <div class="plants-options option-css">New Arrivals</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content" href="" data-op="se">
+                    SEEDS<div class="underline"></div>
+                </div>
+                <div class="options-div se">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="seeds-options option-css option-css1" data-plant="flowerseeds">Flower Seeds</div>
+                    <div class="seeds-options option-css  option-css1" data-plant="vegetableseeds">Vegetable Seeds</div>
+                    <div class="seeds-options option-css">Microgreen Seeds</div>
+                    <div class="seeds-options option-css">Herb Seeds</div>
+                    <div class="seeds-options option-css">Fruit Seeds</div>
+                    <div class="seeds-options option-css">Tree & Grass Seeds</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content" href="" data-op="po">
+                    POTS & PLANTERS<div class="underline"></div>
+                </div>
+                <div class="options-div potoptions po">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="pots-options option-css option-css1" data-plant="plasticpots">Plastic Pots</div>
+                    <div class="pots-options option-css  option-css1" data-plant="ceramicpots">Ceramic Pots</div>
+                    <div class="pots-options option-css">Metal Planters</div>
+                    <div class="pots-options option-css">Wooden Planters</div>
+                    <div class="pots-options option-css">Hanging Planters</div>
+                    <div class="pots-options option-css">Plant Stands</div>
+                    <div class="pots-options option-css">Seeding Trays</div>
+                    <div class="pots-options option-css">Basket Planters</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content" href="" data-op="pla">
+                    PLANT CARE<div class="underline"></div>
+                </div>
+                <div class="options-div pla">
+                    <div class="anglediv">
+                        <div class="angle"></div>
+                    </div>
+                    <div class="care-options option-css">Potting Mix & Fertilizers</div>
+                    <div class="care-options option-css">Garden Tools</div>
+                    <div class="care-options option-css">Watering Tools & Accessories</div>
+                    <div class="care-options option-css">Garden Decor & Accessories</div>
+                    <div class="care-options option-css">Pest Control</div>
+                    <div class="care-options option-css">Video Consultation-Doctor green</div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content" href="" data-op="bl">
+                    BLOG<div class="underline"></div>
+                </div>
+            </div>
+
+
+            <div class="options">
+                <div class="content" href="" data-op="sp">
+                    SPECIAL OFFERS<div class="underline"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="plants  indoorplantpot">
+
+        <div style="width: 100%;height: auto;">
+            <img class="banner2" src="allimages/banner2.jpg" style="width: 100%; height: auto;" alt="">
+            <img class="banner2one" src="allimages/banner2one.jpg" style="width: 100%; height: auto;" alt="">
+        </div>
+
+
+
+        <div id="show-box">
+            <div class="cart-show-box">
+
+                <div class="cart-show-box1">
+                    <div class="showboximgsec">
+                        <img src="" alt="" id="buyimg" width="100%" height="70%">
+                    </div>
+                </div>
+
+                <div class="cart-show-box2">
+                    <div class="removebtn" onclick="cartcutbtn()">X</div>
+
+                    <img class="logo-on-cart" src="allimages/logo.png" alt="">
+
+                    <div class="odject-cart-detail-div">
+                        <div class="plant-name" id="plantname"></div>
+
+                        <div class="star-rating">
+                            <div class="rating">Rating:</div>
+                            <div class="star-rating-icon">
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-sm" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="quanti-div">Quantity:<input type="number" min="1" style="width: 35px;" value="1">
+                        </div>
+
+                        <div class="price">₹199.00</div>
+
+                        <div class="size-radio-div">
+                            <div class="size">Select plant size:</div>
+                            <div class="size-radio">
+                                <div class="input-radio radio colo">Small</div>
+                                <div class="input-radio radio colo">Medium</div>
+                                <div class="input-radio radio colo">Large</div>
+                            </div>
+                        </div>
+
+                        <div class="btn-div1">
+                            <button class="buy-btn">
+                                <i class="fa-regular fa-square-caret-down fa-lg addto-icon"
+                                    style="color: #fefcfc;"></i>Buy
+                            </button>
+                            <div class="heartbtn">
+                                <i class="fa-solid fa-heart fa-lg heart" id="hearticon" onclick="heart(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="indoorplantcontentr">
+            <div class="content1r">
+                <div class="contenttextdiv2r">
+                    <div class="content1textr">INDOOR PLANTS</div>
+                </div>
+                <div class="content1animationdivr">
+                    <div class="slideranir ">
+                        <div class="content1textr">For Bedroom</div>
+                        <div class="content1textr">For Kitchen</div>
+                        <div class="content1textr">For Drawingroom</div>
+                        <div class="content1textr">For Balcony</div>
+                    </div>
+                </div>
+            </div>
+            <div class="indoorplantcontent2r">Plantly is here to inspire you to
+                have
+                plants around you. To look at life in a very different way, helping you connect with nature. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+        <div class="indoorplantcontent">
+            <div class="indoorplantcontent1">
+                INDOOR PLANTS
+            </div>
+            <div class="indoorplantcontent2">Plantly is here to inspire you to
+                have
+                plants around you. To look at life in a very different way, helping you connect with nature. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="cart-container-div">
+
+            <div class="cart-container">
+
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box1"><img id="jo" class="indoorplantimg"
+                                src="allimages/indoorplant1.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Dracaena trifasciata</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box2"><img class="indoorplantimg"
+                                src="allimages/indoorplant14.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Cordyline fruticosa</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box3"><img class="indoorplantimg"
+                                src="allimages/indoorplant3.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Laxmi kamal</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box4"><img class="indoorplantimg"
+                                src="allimages/indoorplant4.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Dracaena</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box5"><img class="indoorplantimg"
+                                src="allimages/indoorplant5.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Swiss cheese plant</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box6"><img class="indoorplantimg"
+                                src="allimages/indoorplant6.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Lucky bamboo</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box7"><img class="indoorplantimg"
+                                src="allimages/indoorplant7.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Zebra haworthia</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box8"><img class="indoorplantimg"
+                                src="allimages/indoorplant8.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Licuala grandis</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box9"><img class="indoorplantimg"
+                                src="allimages/indoorplant9.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Purple heart plant</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box10"><img class="indoorplantimg"
+                                src="allimages/indoorplant10.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Calathea medallion</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box11"><img class="indoorplantimg"
+                                src="allimages/indoorplant11.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Schefflera arboricola</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box12"><img class="indoorplantimg"
+                                src="allimages/indoorplant12.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Rubber fig</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box13"><img class="indoorplantimg"
+                                src="allimages/indoorplant13.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Spathiphyllum wallisii</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box14"><img class="indoorplantimg"
+                                src="allimages/indoorplant2.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div> Baby rubberplant</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box15"><img class="indoorplantimg"
+                                src="allimages/indoorplant15.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Aglaonema</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box16"><img class="indoorplantimg"
+                                src="allimages/indoorplant16.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Haworthiopsis limifolia</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box17"><img class="indoorplantimg"
+                                src="allimages/indoorplant17.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Money Plant</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box18"><img class="indoorplantimg"
+                                src="allimages/indoorplant18.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Madagascar palm</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box19"><img class="indoorplantimg"
+                                src="allimages/indoorplant19.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Chinese money plant</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box20"><img class="indoorplantimg"
+                                src="allimages/indoorplant20.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Rain lily</div>
+                                <div class="check-out">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="plants flowerplantpot" id="flowerdiv">
+
+        <div class="hidebanner" style="width: 100%;height: 100%;"><img src="allimages/banner1.jpg"
+                style="width: 100%; height: auto;" alt="">
+        </div>
+
+
+
+        <div id="show-box1">
+            <div class="cart-show-box">
+
+                <div class="cart-show-box1">
+                    <div class="showboximgsec">
+                        <img src="" alt="" id="buyimg1" width="100%" height="70%">
+                    </div>
+                </div>
+
+                <div class="cart-show-box2">
+                    <div class="removebtn" onclick="cartcutbtn1()">X</div>
+
+                    <img class="logo-on-cart" src="allimages/logo.png" alt="">
+
+                    <div class="odject-cart-detail-div">
+                        <div class="plant-name" id="plantname1"></div>
+
+                        <div class="star-rating">
+                            <div class="rating">Rating:</div>
+                            <div class="star-rating-icon">
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-sm" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="quanti-div">Quantity:<input type="number" min="1" style="width: 35px;" value="1">
+                        </div>
+
+                        <div class="price">₹199.00</div>
+
+                        <div class="size-radio-div">
+                            <div class="size">Select plant size:</div>
+                            <div class="size-radio">
+                                <div class="input-radio radio colo">Small</div>
+                                <div class="input-radio radio colo">Medium</div>
+                                <div class="input-radio radio colo">Large</div>
+                            </div>
+                        </div>
+
+                        <div class="btn-div1">
+                            <button class="buy-btn">
+                                <i class="fa-regular fa-square-caret-down fa-lg addto-icon"
+                                    style="color: #fefcfc;"></i>Buy
+                            </button>
+                            <div
+                                style="width: 40px; height: 30px;border: 2px solid rgba(75, 74, 74, 0); display: flex;justify-content: center;align-items: center;border-radius: 5px;">
+                                <i class="fa-solid fa-heart fa-lg heart" id="hearticon1" onclick="heart1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="indoorplantcontentr">
+            <div class="content1r">
+                <div class="contenttextdiv2r">
+                    <div class="content1textr">FLOWER
+                        PLANTS</div>
+                </div>
+                <div class="content1animationdivr">
+                    <div class="slideranir ">
+                        <div class="content1textr">For Bedroom</div>
+                        <div class="content1textr">For Kitchen</div>
+                        <div class="content1textr">For Drawingroom</div>
+                        <div class="content1textr">For Balcony</div>
+                    </div>
+                </div>
+            </div>
+            <div class="indoorplantcontent2r">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="indoorplantcontent">
+            <div class="indoorplantcontent1">
+                FLOWERING
+                PLANTS</div>
+            <div class="indoorplantcontent2">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="cart-container-div">
+
+            <div class="cart-container">
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box1"><img id="jo" class="indoorplantimg"
+                                src="allimages/flowerimg1.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Gazania</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box2"><img class="indoorplantimg" src="allimages/flowerimg14.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Dahlia Pinnata</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box3"><img class="indoorplantimg" src="allimages/flowerimg3.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Moss-rose Purslane</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box4"><img class="indoorplantimg" src="allimages/flowerimg4.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Cape Marguerite</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box5"><img class="indoorplantimg" src="allimages/flowerimg5.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Dahlia</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box6"><img class="indoorplantimg" src="allimages/flowerimg6.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Madagascar Periwinkle</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box7"><img class="indoorplantimg" src="allimages/flowerimg7.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Cockscomb</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box8"><img class="indoorplantimg" src="allimages/flowerimg8.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Gazania Rigens</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box9"><img class="indoorplantimg" src="allimages/flowerimg9.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Cape Jasmine</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box10"><img class="indoorplantimg"
+                                src="allimages/flowerimg10.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Starry Wild Jasmine</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box11"><img class="indoorplantimg"
+                                src="allimages/flowerimg11.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Surfinia</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box12"><img class="indoorplantimg"
+                                src="allimages/flowerimg12.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Dianthus Sweet William</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box13"><img class="indoorplantimg"
+                                src="allimages/flowerimg13.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Hydrangea Macearly Blue</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box14"><img class="indoorplantimg" src="allimages/flowerimg2.jpg"
+                                alt="">
+                            <div class="checkandname-div">
+                                <div>Rose</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box15"><img class="indoorplantimg"
+                                src="allimages/flowerimg15.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Merigold</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box16"><img class="indoorplantimg"
+                                src="allimages/flowerimg16.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Orange Jessmine</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box17"><img class="indoorplantimg"
+                                src="allimages/flowerimg17.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Cooktown Orchid</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box18"><img class="indoorplantimg"
+                                src="allimages/flowerimg18.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Bunch-Flowered Daffodil</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box19"><img class="indoorplantimg"
+                                src="allimages/flowerimg19.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Jungle Geranium</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box20"><img class="indoorplantimg"
+                                src="allimages/flowerimg20.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Water Hyacinth</div>
+                                <div class="check-out1">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="plants flowerseeds" id="flowerdiv">
+
+        <div class="hidebanner" style="width: 100%;height: 100%;"><img src="allimages/seedbanner.jpg"
+                style="width: 100%; height: auto;" alt="">
+        </div>
+
+
+
+        <div id="show-box2">
+            <div class="cart-show-box">
+
+                <div class="cart-show-box1">
+                    <div class="showboximgsec">
+                        <img src="" alt="" id="buyimg2" width="100%" height="70%">
+                    </div>
+                </div>
+
+                <div class="cart-show-box2">
+                    <div class="removebtn" onclick="cartcutbtn2()">X</div>
+
+                    <img class="logo-on-cart" src="allimages/logo.png" alt="">
+
+                    <div class="odject-cart-detail-div">
+                        <div class="plant-name" id="plantname2"></div>
+
+                        <div class="star-rating">
+                            <div class="rating">Rating:</div>
+                            <div class="star-rating-icon">
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-sm" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="quanti-div">Quantity:<input type="number" min="1" style="width: 35px;" value="1">
+                        </div>
+
+                        <div class="price">₹199.00</div>
+
+                        <!-- <div class="size-radio-div">
+                            <div class="size">Select plant size:</div>
+                            <div class="size-radio">
+                                <div class="input-radio radio colo">Small</div>
+                                <div class="input-radio radio colo">Medium</div>
+                                <div class="input-radio radio colo">Large</div>
+                            </div>
+                        </div> -->
+
+                        <div class="btn-div1">
+                            <button class="buy-btn">
+                                <i class="fa-regular fa-square-caret-down fa-lg addto-icon"
+                                    style="color: #fefcfc;"></i>Buy
+                            </button>
+                            <div
+                                style="width: 40px; height: 30px;border: 2px solid rgba(75, 74, 74, 0); display: flex;justify-content: center;align-items: center;border-radius: 5px;">
+                                <i class="fa-solid fa-heart fa-lg heart" id="hearticon2" onclick="heart2()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="indoorplantcontentr">
+            <div class="content1r">
+                <div class="contenttextdiv2r">
+                    <div class="content1textr">FLOWER SEEDS</div>
+                </div>
+                <div class="content1animationdivr">
+                    <div class="slideranir ">
+                        <div class="content1textr">All Season</div>
+                        <div class="content1textr">Summer Season</div>
+                        <div class="content1textr">Rainy Season</div>
+                        <div class="content1textr">Winter Season</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="indoorplantcontent2r">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div> -->
+        </div>
+
+
+
+        <div class="indoorplantcontent">
+            <div class="indoorplantcontent1">
+                FLOWERING
+                PLANTS</div>
+            <div class="indoorplantcontent2">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="cart-container-div">
+
+            <div class="cart-container">
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box1"><img id="jo" class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds1.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Nasturtium Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box2"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds2.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Hibiscus Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box3"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds3.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Sunflower Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box4"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds4.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Lotus Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box5"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds5.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Marigold Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box6"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds6.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>
+                                    Pansy Swiss Seeds
+                                </div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box7"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds7.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Bellis Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box8"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds8.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Snapdragon Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box9"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds9.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Jasmine Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box10"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds10.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Cockscomb Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box11"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds11.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Red Santan Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box12"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds12.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Aparajita Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box13"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds13.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Red Poppy Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box14"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds14.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Dandelion Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box15"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds15.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Lavender Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box16"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds16.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Madagascar periwinkle Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box17"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds17.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Champa Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box18"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds18.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Jatropha Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box19"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds19.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Lily Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box20"><img class="indoorplantimg imgbor"
+                                src="allimages/flowerseeds20.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Calla Lily Seeds</div>
+                                <div class="check-out2">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="plants vegetableseeds" id="flowerdiv">
+
+        <div class="hidebanner" style="width: 100%;height: 100%;"><img src="allimages/vegeseedbanner.jpg"
+                style="width: 100%; height: auto;" alt="">
+        </div>
+
+
+
+        <div id="show-box5">
+            <div class="cart-show-box">
+
+                <div class="cart-show-box1">
+                    <div class="showboximgsec">
+                        <img src="" alt="" id="buyimg5" width="100%" height="70%">
+                    </div>
+                </div>
+
+                <div class="cart-show-box2">
+                    <div class="removebtn" onclick="cartcutbtn5()">X</div>
+
+                    <img class="logo-on-cart" src="allimages/logo.png" alt="">
+
+                    <div class="odject-cart-detail-div">
+                        <div class="plant-name" id="plantname5"></div>
+
+                        <div class="star-rating">
+                            <div class="rating">Rating:</div>
+                            <div class="star-rating-icon">
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-sm" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="quanti-div">Quantity:<input type="number" min="1" style="width: 35px;" value="1">
+                        </div>
+
+                        <div class="price">₹199.00</div>
+
+                        <!-- <div class="size-radio-div">
+                            <div class="size">Select plant size:</div>
+                            <div class="size-radio">
+                                <div class="input-radio radio colo">Small</div>
+                                <div class="input-radio radio colo">Medium</div>
+                                <div class="input-radio radio colo">Large</div>
+                            </div>
+                        </div> -->
+
+                        <div class="btn-div1">
+                            <button class="buy-btn">
+                                <i class="fa-regular fa-square-caret-down fa-lg addto-icon"
+                                    style="color: #fefcfc;"></i>Buy
+                            </button>
+                            <div
+                                style="width: 40px; height: 30px;border: 2px solid rgba(75, 74, 74, 0); display: flex;justify-content: center;align-items: center;border-radius: 5px;">
+                                <i class="fa-solid fa-heart fa-lg heart" id="hearticon5" onclick="heart5()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="indoorplantcontentr">
+            <div class="content1r">
+                <div class="contenttextdiv2r">
+                    <div class="content1textr">FLOWER SEEDS</div>
+                </div>
+                <div class="content1animationdivr">
+                    <div class="slideranir ">
+                        <div class="content1textr">All Season</div>
+                        <div class="content1textr">Summer Season</div>
+                        <div class="content1textr">Rainy Season</div>
+                        <div class="content1textr">Winter Season</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="indoorplantcontent2r">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div> -->
+        </div>
+
+
+
+        <div class="indoorplantcontent">
+            <div class="indoorplantcontent1">
+                FLOWERING
+                PLANTS</div>
+            <div class="indoorplantcontent2">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="cart-container-div">
+
+            <div class="cart-container">
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box1"><img id="jo" class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds1.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Onion (black) Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box2"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds2.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Onion (yellow) Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box3"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds3.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Mustard Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box4"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds4.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Red Yard Long Beans Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box5"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds5.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Cherry Tomato (yellow) Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box6"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds6.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>
+                                    Kholrabi (purple) Seeds
+                                </div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box7"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds7.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Kholrabi (Green) Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box8"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds8.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Purple Turnip Top Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box9"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds9.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Swiss Chard vegetable Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box10"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds10.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Oregano Herb Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box11"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds11.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Pak Choi Red Vegetable Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box12"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds12.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Thyme Herb Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box13"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds13.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Round Squash Light Green Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box14"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds14.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Pumpkin (Black) Vegetable Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box15"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds15.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Tomato Round Climber Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box16"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds16.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Bottlegourd Round Vegetable Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box17"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds17.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Pink Radish Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box18"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds18.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Bittergourd Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box19"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds19.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Brinjal (black) Big Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box20"><img class="indoorplantimg imgbor"
+                                src="allimages/vegeseeds20.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>Bottlegourd Bulb Vegetable Seeds</div>
+                                <div class="check-out5">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="plants plasticpots" id="flowerdiv">
+
+        <div class="hidebanner" style="width: 100%;height: 100%;"><img src="allimages/planterbanner.jpg"
+                style="width: 100%; height: auto;" alt="">
+        </div>
+
+
+        <div id="show-box3">
+            <div class="cart-show-box">
+
+                <div class="cart-show-box1">
+                    <div class="showboximgsec">
+                        <img src="" alt="" id="buyimg3" width="100%" height="70%">
+                    </div>
+                </div>
+
+                <div class="cart-show-box2">
+                    <div class="removebtn" onclick="cartcutbtn3()">X</div>
+
+                    <img class="logo-on-cart" src="allimages/logo.png" alt="">
+
+                    <div class="odject-cart-detail-div">
+                        <div class="plant-name" id="plantname3"></div>
+
+                        <div class="star-rating">
+                            <div class="rating">Rating:</div>
+                            <div class="star-rating-icon">
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-sm" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="quanti-div">Quantity:<input type="number" min="1" style="width: 35px;" value="1">
+                        </div>
+
+                        <div class="price">₹500
+                            .00</div>
+
+                        <div class="size-radio-div">
+                            <div class="size">Select plant size:</div>
+                            <div class="size-radio">
+                                <div class="input-radio radio colo">Small</div>
+                                <div class="input-radio radio colo">Medium</div>
+                                <div class="input-radio radio colo">Large</div>
+                            </div>
+                        </div>
+
+                        <div class="btn-div1">
+                            <button class="buy-btn">
+                                <i class="fa-regular fa-square-caret-down fa-lg addto-icon"
+                                    style="color: #fefcfc;"></i>Buy
+                            </button>
+                            <div
+                                style="width: 40px; height: 30px;border: 2px solid rgba(75, 74, 74, 0); display: flex;justify-content: center;align-items: center;border-radius: 5px;">
+                                <i class="fa-solid fa-heart fa-lg heart" id="hearticon3" onclick="heart3()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="indoorplantcontentr">
+            <div class="content1r">
+                <div class="contenttextdiv2r">
+                    <div class="content1textr">PLANTERS & POTS</div>
+                </div>
+                <div class="content1animationdivr">
+                    <div class="slideranir ">
+                        <div class="content1textr">Plastic Pots</div>
+                        <div class="content1textr">Metal Planters</div>
+                        <div class="content1textr">Ceramic Pots</div>
+                        <div class="content1textr">Hanging Planters</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="indoorplantcontent2r">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div> -->
+        </div>
+
+
+
+        <div class="indoorplantcontent">
+            <div class="indoorplantcontent1">
+                FLOWERING
+                PLANTS</div>
+            <div class="indoorplantcontent2">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="cart-container-div">
+
+            <div class="cart-container">
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box1"><img id="jo" class="indoorplantimg imgbor"
+                                src="allimages/plasticpot1.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box2"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot2.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box3"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot3.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box4"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot4.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box5"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot5.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box6"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot6.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>
+
+                                </div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box7"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot7.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box8"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot8.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box9"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot9.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box10"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot10.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box11"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot11.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box12"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot12.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box13"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot13.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box14"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot14.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box15"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot15.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box16"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot16.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box17"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot17.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box18"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot18.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box19"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot19.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box20"><img class="indoorplantimg imgbor"
+                                src="allimages/plasticpot20.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out3">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="plants ceramicpots" id="flowerdiv">
+
+        <div class="hidebanner" style="width: 100%;height: 100%;"><img src="allimages/planterbanner2.jpg"
+                style="width: 100%; height: auto;" alt="">
+        </div>
+
+
+        <div id="show-box4">
+            <div class="cart-show-box">
+
+                <div class="cart-show-box1">
+                    <div class="showboximgsec">
+                        <img src="" alt="" id="buyimg4" width="100%" height="70%">
+                    </div>
+                </div>
+
+                <div class="cart-show-box2">
+                    <div class="removebtn" onclick="cartcutbtn4()">X</div>
+
+                    <img class="logo-on-cart" src="allimages/logo.png" alt="">
+
+                    <div class="odject-cart-detail-div">
+                        <div class="plant-name" id="plantname4"></div>
+
+                        <div class="star-rating">
+                            <div class="rating">Rating:</div>
+                            <div class="star-rating-icon">
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-sm" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="quanti-div">Quantity:<input type="number" min="1" style="width: 35px;" value="1">
+                        </div>
+
+                        <div class="price">₹500
+                            .00</div>
+
+                        <div class="size-radio-div">
+                            <div class="size">Select plant size:</div>
+                            <div class="size-radio">
+                                <div class="input-radio radio colo">Small</div>
+                                <div class="input-radio radio colo">Medium</div>
+                                <div class="input-radio radio colo">Large</div>
+                            </div>
+                        </div>
+
+                        <div class="btn-div1">
+                            <button class="buy-btn">
+                                <i class="fa-regular fa-square-caret-down fa-lg addto-icon"
+                                    style="color: #fefcfc;"></i>Buy
+                            </button>
+                            <div
+                                style="width: 40px; height: 30px;border: 2px solid rgba(75, 74, 74, 0); display: flex;justify-content: center;align-items: center;border-radius: 5px;">
+                                <i class="fa-solid fa-heart fa-lg heart" id="hearticon4" onclick="heart4()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="indoorplantcontentr">
+            <div class="content1r">
+                <div class="contenttextdiv2r">
+                    <div class="content1textr">PLANTERS & POTS</div>
+                </div>
+                <div class="content1animationdivr">
+                    <div class="slideranir ">
+                        <div class="content1textr">Plastic Pots</div>
+                        <div class="content1textr">Metal Planters</div>
+                        <div class="content1textr">Ceramic Pots</div>
+                        <div class="content1textr">Hanging Planters</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="indoorplantcontent2r">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div> -->
+        </div>
+
+
+
+        <div class="indoorplantcontent">
+            <div class="indoorplantcontent1">
+                FLOWERING
+                PLANTS</div>
+            <div class="indoorplantcontent2">Most flowering potted plants should
+                be placed in areas with the most light in order to maintain good flower color and promote the maximum
+                number of flowers to open. <br>
+                Each
+                plant
+                you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</div>
+        </div>
+
+
+
+        <div class="cart-container-div">
+
+            <div class="cart-container">
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box1"><img id="jo" class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot1.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box2"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot2.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box3"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot3.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box4"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot4.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box5"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot5.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box6"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot6.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div>
+
+                                </div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box7"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot7.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box8"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot8.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box9"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot9.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box10"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot10.jpg" alt="">
+                            <div class="checkandname-div">
+                                <div></div>
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="forphonewidth">
+
+                    <div class="cart-container1" data-aos="fade-left">
+
+                        <div class="cart-box" id="cart-box11"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot11.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box12"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot12.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box13"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot13.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box14"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot14.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box15"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot15.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-container1" data-aos="fade-right">
+
+                        <div class="cart-box" id="cart-box16"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot16.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box17"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot17.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box18"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot18.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box19"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot19.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-box" id="cart-box20"><img class="indoorplantimg imgbor"
+                                src="allimages/ceramicpot20.jpg" alt="">
+                            <div class="checkandname-div">
+
+                                <div class="check-out4">Check-Out</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr style="margin: 3%;">
+
+
+
+
+
+
+
+    <div class="why">
+        <div class="why-text">Why Plantly</div>
+
+        <div class="why-reason">
+            <div class="reason reason1"><img src="allimages/ecofriendlyicon.png" alt="" class="whyreasonimg"> Secure
+                and Recyclable Packaging</div>
+            <div class="reason reason2"><img src="allimages/replaceicon.png" alt="" class="whyreasonimg">Free
+                Replacements if Damaged</div>
+            <div class="reason reason3"><img src="allimages/wateringicon.png" alt="" class="whyreasonimg">Self-Watering Pots with
+                Every Plant</div>
+            <div class="reason reason4"><img src="allimages/supporticon.png" alt="" class="whyreasonimg">Lifetime
+                Support</div>
+        </div>
+
+        <div class="variety" data-aos="fade-right">
+            <img class="vpmimg" src="allimages/varietyimg1.jpg" alt="">
+            <div class="vpmcontent">
+                <div class="variety-text">The Variety You Deserve</div>
+
+                <div class="variety-content-div">
+                    <p class="variety-content">Whether you are planning to buy indoor plants or outdoor plants, we have
+                        got you covered. Plantly brings a rich variety of plants for all your home decor needs.</p>
+                    <p class="variety-content">Plantly has categorized plants into succulents, indoor plants,
+                        pet-friendly plants, and other categories to make buying choice easier for people looking to buy
+                        plants online in India.</p>
+                    <p class="variety-content">For Customers who wish to buy plants but are not sure which plants to
+                        buy, we provide guidance and plantscaping services. With Plantly by your side, you never have to
+                        worry about finding the right plant.</p>
+                    <p class="variety-content">All our plants come in varieties of premium planters, which makes a
+                        complete set ready to be added to your home decor or for that perfect gift you wish to give to
+                        your loved ones.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="planters" data-aos="fade-left">
+            <img class="planterimg vpmimg" src="allimages/plantersimg1.jpg" alt="">
+            <div class="vpmcontent">
+                <div class="planters-text">Premium Planters</div>
+                <div class="planters-content-div">
+                    <p class="planters-content">Are you looking for the perfect premium potted plant for your home
+                        decor? Plantly brings to you premium handcrafted planters that are size-matched with every plant
+                        you buy.</p>
+                    <p class="planters-content">All plants sold by Plantly are double-potted with a grow pot and a
+                        premium planter for decor. This ensures that all our plants have optimal air-flow and drainage.
+                        This arrangement makes the pots self-watering.</p>
+                    <p class="planters-content">The planters are prepared in small batches by highly skilled artisans
+                        from India. These planters are durable and extremely easy to clean, so they remain new for
+                        years.</p>
+                    <p class="planters-content">Plantly premium potted are a perfect gift to your loved ones. with every
+                        part of the product made by experts in India.</p>
+                </div>
+            </div>
+            <img class="planterimg1 vpmimg" src="allimages/plantersimg1.jpg" alt="">
+        </div>
+
+        <div class="comfort" data-aos="fade-right">
+            <img class="vpmimg" src="allimages/comfortimg1.jpg" alt="">
+            <div class="vpmcontent">
+                <div class="comfort-text">Comfort</div>
+                <div class="comfort-content-div">
+                    <p class="comfort-content">By making your plant purchases online, you can avoid the hassle of going
+                        to actual nurseries, negotiating crowded aisles, and wasting time looking for particular plants.
+                        When you choose the online option, you can access the plant with just a few clicks and taps,
+                        which is much more convenient than doing your plant shopping offline.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="video">
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper ">
+                    <li class="card-item swiper-slide">
+                        <a href="" class="card-link">
+                            <video src="allimages/new1.mp4" class="card-image" controls autoplay loop></video>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="" class="card-link">
+                            <video src="allimages/new2.mp4" class="card-image" controls autoplay loop></video>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="" class="card-link">
+                            <video src="allimages/new3.mp4" class="card-image" controls autoplay loop></video>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="" class="card-link">
+                            <video src="allimages/new4.mp4" class="card-image" controls autoplay loop></video>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-div">
+
+        <div class="footer-div1">
+            <div class="footer-div2">
+                <div class="footer-subtitle">ABOUT US</div>
+                <div class="footeropthide">
+                    <div class="footer-content">Our Story</div>
+                    <div class="footer-content">Careers</div>
+                    <div class="footer-content">Contact Us</div>
+                    <div class="footer-content">Locate Stores</div>
+                    <div class="footer-content">Own Grown</div>
+                    <div class="footer-content">Garden Services </div>
+                    <div class="footer-content">Maintenance</div>
+                </div>
+            </div>
+
+            <div class="footer-div2">
+                <div class="footer-subtitle">CUSTOMER CARE</div>
+                <div class="footeropthide">
+                    <div class="footer-content">Take The Plant Quiz</div>
+                    <div class="footer-content">Track Order</div>
+                    <div class="footer-content">Shipping Policy</div>
+                    <div class="footer-content">Terms and Conditions</div>
+                    <div class="footer-content">Privacy Policy</div>
+                    <div class="footer-content">FAQs</div>
+                    <div class="footer-content">Terms of Service</div>
+                    <div class="footer-content">Refund Policy</div>
+                </div>
+            </div>
+
+
+            <div class="footer-div2 forgap">
+                <div style="display: flex; flex-direction:column; gap: 0.9rem;">
+                    <div class="footer-subtitle">OFFERS & REWARDS</div>
+                    <div class="footeropthide">
+                        <div class="footer-content">Plant Parent Rewards Club</div>
+                        <div class="footer-content">plant Coupons</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction:column; gap: 0.9rem;">
+                    <div class="footer-subtitle">GET IN TOUCH</div>
+                    <div class="footeropthide">
+                        <div class="footer-content">Call : +91-****-****-**</div>
+                        <div class="footer-content">Email : abc@Gmail.com</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="follow-div footer-div2 forgap">
+                <div style="width: 100%;height: 100px;" class="forgap1">
+                    <div class="footer-subtitle pin">FOLLOW US ON</div>
+                    <div class="wrapper">
+                        <a href="" class="socialmedia-icon socialmedia-icon1"><i
+                                class="fa-brands fa-instagram fa-xl stee"></i></a>
+                        <a href="" class="socialmedia-icon socialmedia-icon2"><i
+                                class="fa-brands fa-linkedin-in fa-xl stee"></i></a>
+                        <a href="" class="socialmedia-icon socialmedia-icon3"><i
+                                class="fa-brands fa-square-facebook fa-xl stee"></i></a>
+                        <a href="" class="socialmedia-icon socialmedia-icon4"><i
+                                class="fa-brands fa-square-x-twitter fa-xl stee"></i></a>
+                    </div>
+                </div>
+                <div class="regis">
+                    <div class="footer-subtitle">REGISTRATION WITH E-MAIL</div>
+                    <input type="email" placeholder="Enter Mail ID" style="width: 90%;height: 27px; padding-left:8px ;">
+                </div>
+
+            </div>
+
+            <div class="footer-div2 forgap pay">
+                <div style="display: flex; flex-direction:column; gap: 0.9rem;">
+                    <div class="footer-subtitle">PAYMENT ACCEPTED IN</div>
+                    <div class="footer-content"><img src="allimages/PAYmentmethodimg.png" alt="" width="70%"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr class="lasthr">
+
+
+        <div class="lastline">
+            <div class="wrapper wrapper1">
+                <a href="" class="socialmedia-icon socialmedia-icon1"><i
+                        class="fa-brands fa-instagram fa-xl stee"></i></a>
+                <a href="" class="socialmedia-icon socialmedia-icon2"><i
+                        class="fa-brands fa-linkedin-in fa-xl stee"></i></a>
+                <a href="" class="socialmedia-icon socialmedia-icon3"><i
+                        class="fa-brands fa-square-facebook fa-xl stee"></i></a>
+                <a href="" class="socialmedia-icon socialmedia-icon4"><i
+                        class="fa-brands fa-square-x-twitter fa-xl stee"></i></a>
+            </div>
+
+            <marquee class="copyrightline" behavior="" direction="" scrollamount="12"><i
+                    class="fa-solid fa-copyright fa-lg" style="color: #fcfcfc;"></i> 2024 The
+                Plantly. All Rights Reserved. / Powered by Connexexpert
+            </marquee>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+
+
+
+        function hamburgerslidertoogle() {
+            document.getElementById("hamburger-slide").classList.add("slide");
+            document.getElementById("btn-div").style.display = "inline";
+        };
+
+
+
+        function closebtn() {
+            document.getElementById("hamburger-slide").classList.remove("slide");
+            document.getElementById("btn-div").style.display = "none";
+            document.getElementById("wishlist3").classList.remove("wishlistbag1");
+        }
+
+
+        function wish() {
+            document.getElementById("wishlist3").classList.add("wishlistbag1");
+            document.getElementById("btn-div").style.display = "inline";
+        }
+
+
+        function slideleft() {
+            document.getElementById("hamburger-slide").classList.remove("slide");
+        };
+
+        function signupbtnn() {
+            document.getElementById("signpage").style.display = "flex";
+        };
+
+        function cutbtn() {
+            document.getElementById("signpage").style.display = "none";
+            document.getElementById("coverdiv").classList.remove("coverdiv1")
+        };
+
+        function abc() {
+            document.getElementById("coverdiv").classList.add("coverdiv1")
+        };
+
+        function signupbtn() {
+            document.getElementById("coverdiv").classList.remove("coverdiv1")
+        };
+
+
+        function cartcutbtn() {
+            document.getElementById("show-box").style.display = "none";
+            document.getElementById("hearticon").classList.remove("heartcolor");
+
+        }
+
+        function cartcutbtn1() {
+            document.getElementById("show-box1").style.display = "none";
+        }
+
+
+
+        function cartcutbtn2() {
+            document.getElementById("show-box2").style.display = "none";
+
+        }
+
+        function cartcutbtn3() {
+            document.getElementById("show-box3").style.display = "none";
+
+        }
+
+        function cartcutbtn4() {
+            document.getElementById("show-box4").style.display = "none";
+
+        }
+
+        function cartcutbtn5() {
+            document.getElementById("show-box5").style.display = "none";
+
+        }
+
+
+
+
+        function heart() {
+            document.getElementById("hearticon").classList.toggle("heartcolor");
+            // document.getElementById("hearticon").classList.toggle.remove("heart");
+
+        }
+
+        // let po = document.querySelectorAll(".heart");
+        // po.forEach(function (x) {
+        //     addEventListener("click", function () {
+        //         let buyimg = document.getElementById("buyimg").src;
+
+
+        //         let li = document.createElement("li"); 
+        //         li.setAttribute("class", "listItem");
+
+        //         let btn = document.createElement("button");  
+        //         btn.setAttribute("class", "removebtn");
+        //         btn.innerHTML = "Remove Item";
+
+        //         let img = document.createElement("img");
+        //         img.setAttribute("class", "wishimg1");
+
+        //         li.appendChild(img);
+        //         li.appendChild(btn);
+
+        //         let listy =  document.getElementById("wishitem").appendChild(li);
+        //         listy.children[0].children[0].scr = buyimg;
+
+
+        //     })
+        // })
+
+
+
+
+
+
+        function heart1() {
+            document.getElementById("hearticon1").classList.toggle("heartcolor");
+            // document.getElementById("hearticon1").classList.toggle.remove("heart");
+        }
+
+        function heart2() {
+            document.getElementById("hearticon2").classList.toggle("heartcolor");
+            // document.getElementById("hearticon2").classList.toggle.remove("heart");
+        }
+
+        function heart3() {
+            document.getElementById("hearticon3").classList.toggle("heartcolor");
+            // document.getElementById("hearticon3").classList.toggle.remove("heart");
+        }
+
+        function heart4() {
+            document.getElementById("hearticon4").classList.toggle("heartcolor");
+            // document.getElementById("hearticon4").classList.toggle.remove("heart");
+        }
+
+        function heart5() {
+            document.getElementById("hearticon5").classList.toggle("heartcolor");
+            // document.getElementById("hearticon5").classList.toggle.remove("heart");
+        }
+
+
+
+
+
+
+
+
+
+        $(document).ready(function () {
+
+            $("#searchpanelbtn").click(function () {
+                $(".searchpanel").slideToggle()
+            })
+
+
+
+            $("#upbtn").click(function () {
+                $(".searchpanel").slideUp()
+            })
+
+
+
+            $(".radio").click(function () {
+                $(".input-radio").css({ "background-color": "rgba(255, 255, 255, 0)", "color": "#504f4f" })
+                $(this).css({ "background-color": "rgb(34, 34, 34)", "color": "white" })
+            })
+
+
+
+            $(".radio").dblclick(function () {
+                $(this).css({ "background-color": "rgba(255, 255, 255, 0)", "color": "#504f4f" })
+            })
+
+
+
+            $(".option-css1").click(function () {
+                $("#show-box2").css({ "display": "none" })
+                $("#show-box1").css({ "display": "none" })
+                $("#show-box").css({ "display": "none" })
+                $("#show-box3").css({ "display": "none" })
+                $("#show-box4").css({ "display": "none" })
+                $("#show-box5").css({ "display": "none" })
+                $("#flowerdiv").css({ "display": "flex" })
+                let pots = $(this).attr("data-plant");
+                let potss = `.${pots}`;
+                $(".plants").hide();
+                $(potss).show();
+                $(".options-div").hide();
+                $(".options-div1").removeClass("newcssoptiondiv1")
+                $("#btn-div").hide();
+            })
+
+
+            // data-aos="fade-left"
+
+            $(".content").click(function () {
+                let one = $(this).attr("data-op");
+                let two = `.${one}`;
+                $(".options-div").hide();
+                $(two).show();
+                $("#btn-div").show();
+
+            })
+
+
+            $("#btn-div").click(function () {
+                $(".options-div").hide();
+            })
+
+
+        });
+
+
+
+
+
+
+
+
+        let cart = document.querySelectorAll(".cart");
+        cart.forEach(
+            function (x) {
+                x.addEventListener("mouseover", function () {
+                    x.classList.add("cart1")
+                })
+
+                x.addEventListener("mouseleave", function () {
+                    x.classList.remove("cart1")
+                })
+            }
+
+        );
+
+
+
+
+        let check = document.querySelectorAll(".check-out");
+        check.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    document.getElementById("show-box").style.display = "flex";
+
+                    let abc = x.parentElement.parentElement.children[0].src;
+                    document.getElementById("buyimg").src = abc;
+                    let xyz = x.parentElement.children[0].innerHTML;
+                    document.getElementById("plantname").innerHTML = xyz;
+
+                })
+            }
+        );
+
+
+
+
+        let check1 = document.querySelectorAll(".check-out1");
+        check1.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    document.getElementById("show-box1").style.display = "flex";
+
+                    let abc = x.parentElement.parentElement.children[0].src;
+                    document.getElementById("buyimg1").src = abc;
+                    let xyz = x.parentElement.children[0].innerHTML;
+                    document.getElementById("plantname1").innerHTML = xyz;
+
+                })
+            }
+        );
+
+
+        let check2 = document.querySelectorAll(".check-out2");
+        check2.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    document.getElementById("show-box2").style.display = "flex";
+
+                    let abc = x.parentElement.parentElement.children[0].src;
+                    document.getElementById("buyimg2").src = abc;
+                    let xyz = x.parentElement.children[0].innerHTML;
+                    document.getElementById("plantname2").innerHTML = xyz;
+
+                })
+            }
+        );
+
+
+        let check3 = document.querySelectorAll(".check-out3");
+        check3.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    document.getElementById("show-box3").style.display = "flex";
+
+                    let abc = x.parentElement.parentElement.children[0].src;
+                    document.getElementById("buyimg3").src = abc;
+                    let xyz = x.parentElement.children[0].innerHTML;
+                    document.getElementById("plantname3").innerHTML = xyz;
+
+                })
+
+            }
+        );
+
+
+        let check4 = document.querySelectorAll(".check-out4");
+        check4.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    document.getElementById("show-box4").style.display = "flex";
+
+                    let abc = x.parentElement.parentElement.children[0].src;
+                    document.getElementById("buyimg4").src = abc;
+                    // let xyz = x.parentElement.children[0].innerHTML;
+                    // document.getElementById("plantname4").innerHTML = xyz;
+
+                })
+            }
+        );
+
+
+        let check5 = document.querySelectorAll(".check-out5");
+        check5.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    document.getElementById("show-box5").style.display = "flex";
+
+                    let abc = x.parentElement.parentElement.children[0].src;
+                    document.getElementById("buyimg5").src = abc;
+                    let xyz = x.parentElement.children[0].innerHTML;
+                    document.getElementById("plantname5").innerHTML = xyz;
+
+                })
+            }
+        );
+
+
+
+        let secopbtn = document.querySelectorAll(".secopbtn");
+        secopbtn.forEach(
+            function (x) {
+                x.addEventListener("click", function () {
+                    let neo = x.parentElement.children[1].classList.add("newcssoptiondiv1");
+                })
+            });
+
+
+
+        let removebtn2 = document.querySelectorAll(".removebtn2");
+        removebtn2.forEach(function (x) {
+            x.addEventListener("click", function () {
+                let slideright = x.parentElement.parentElement.classList.remove("newcssoptiondiv1");
+            })
+        })
+
+
+
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+           }
+       }
+
+       function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+       }
+
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.card-wrapper', {
+
+            loop: true,
+            spaceBetween: 30,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                },
+            }
+
+        });
+    </script>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>
